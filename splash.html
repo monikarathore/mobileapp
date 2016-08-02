@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300,400italic,300italic&subset=greek-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+<!-- splash screen -->
+<div class="splash animated fadeIn" ng-cloak="">
+	<div class="splashScreen clearfix">
+		<div class="logo clearfix">
+			<h2 class="animated  bounce">Med<span class="animated pulse">S</span>olis</h2>
+			<h5 class="animated  bounceInDown">Health Care Product</h5>
+		</div>
+	</div>
+</div>
+<!-- /splash screen -->
+
+<!-- landing page -->
+<div class="innerPage clearfix"  ng-controller="LoginCheckController" ng-cloak="">
+	<div class="loginPage clearfix">
+		<form name="userForm" ng-submit="submitForm()" novalidate>
+		   		<div class="loginInnerContainer clearfix">
+			   		<div class="logo clearfix">
+						<h2 class="animated bounce">Med<span class="animated pulse">S</span>olis</h2>
+						<h5 class="animated bounceInDown">HealthCare simplified</h5>
+					</div>
+					<div class="loginFrom clearfix">
+							<div class="form-group">
+								<h6>User name</h6>
+								<input type="text" name="username" class="form-control" ng-model="txtUname" required>
+							</div>
+							<div class="form-group">
+								<h6>Password</h6>
+								<input type="password" name="password" class="form-control" ng-model="txtPwd" required>
+							</div>
+							<div class="clearfix" ng-repeat="x in users">
+								<div ng-if="txtUname === x.UserName && txtPwd === x.Password">
+							      You entered UserName and Password correctly.
+							    </div>
+
+							    <div ng-if="txtUname === '' && txtUname !== x.UserName && txtPwd !== x.Password">
+							      You entered UserName and Password Incorrectly.
+							    </div>
+							</div>
+							<span>Forget your password?</span>
+							<div class="buttonContainer clearfix">
+								<button class="submitLogin" type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Submit</button>
+								<button class="cancelLogin">Cancel</button>
+							</div>
+					</div>
+				</div>
+		</form>
+	</div>
+</div>
+<!-- /landing page -->
+<script src="js/angular.js"></script>
+<script src="js/angular-ui-router.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/ui-bootstrap-tpls-0.13.4.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

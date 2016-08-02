@@ -1,0 +1,192 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background: #1a242d;
+  font-size: 100%;
+}
+.splash {
+  display: none;
+}
+[ng-cloak].splash {
+  display: block !important;
+}
+*:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+button[disabled],
+html input[disabled] {
+  cursor: not-allowed;
+}
+.splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+.splash h2 {
+  text-align: center;
+  font-size: 4em;
+  color: white;
+}
+.splashScreen {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  display: table;
+  height: 100vh;
+  background: #d5cea6;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d5cea6), color-stop(40%, #c9c190), color-stop(100%, #b7ad70));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d5cea6', endColorstr='#b7ad70', GradientType=0);
+  /* IE6-9 */
+}
+.splashScreen .logo {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+.splashScreen .logo h2 {
+  color: #333;
+  font-size: 13vh;
+  font-family: 'Roboto Condensed';
+}
+.splashScreen .logo h2 span {
+  color: #FAE955;
+  font-style: italic;
+  font-family: 'Dancing Script';
+}
+.splashScreen .logo h5 {
+  font-size: 4.5vh;
+  font-family: 'Roboto Condensed';
+}
+/* inner pages */
+.innerPage {
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+.innerPage .loginPage {
+  height: 100%;
+  width: 100%;
+  display: table;
+  background: #1a242d;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #1a242d 0%, #263133 36%, #263133 68%, #263133 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1a242d), color-stop(36%, #263133), color-stop(68%, #263133), color-stop(100%, #263133));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #1a242d 0%, #263133 36%, #263133 68%, #263133 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #1a242d 0%, #263133 36%, #263133 68%, #263133 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #1a242d 0%, #263133 36%, #263133 68%, #263133 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #1a242d 0%, #263133 36%, #263133 68%, #263133 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a242d', endColorstr='#263133', GradientType=0);
+  /* IE6-9 */
+}
+.innerPage .loginPage .loginInnerContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+.innerPage .loginPage .logo {
+  display: table;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+}
+.innerPage .loginPage .logo h2 {
+  color: #FAFAFB;
+  font-size: 13vh;
+  font-family: 'Roboto Condensed';
+  margin: 5vh 0 0 0;
+}
+.innerPage .loginPage .logo h2 span {
+  color: #FAE955;
+  font-style: italic;
+  font-family: 'Dancing Script';
+}
+.innerPage .loginPage .logo h5 {
+  font-size: 4.5vh;
+  font-family: 'Roboto Condensed';
+  color: #FAFAFB;
+}
+.innerPage .loginPage .loginFrom {
+  width: 100%;
+  margin: 3vh auto 0 auto;
+}
+.innerPage .loginPage .loginFrom h6 {
+  color: #fff;
+  font-size: 5vh;
+  font-family: 'Roboto Condensed';
+  margin-top: 2vh;
+}
+.innerPage .loginPage .loginFrom span {
+  font-size: 3vh;
+  margin-bottom: 15px;
+  display: block;
+  text-align: right;
+  color: #fff;
+}
+.innerPage .loginPage .loginFrom input {
+  background: #52595D;
+  color: #fff;
+  font-size: 4vh;
+  font-family: 'Roboto Condensed';
+  margin: 1vh auto 3vh;
+  padding: 8px 10px;
+  width: 100%;
+  border: none;
+  height: auto;
+  border: 1px solid #859198;
+}
+.innerPage .loginPage .loginFrom .has-error {
+  color: #FA423F;
+  border: #FA423F;
+  box-shadow: none;
+}
+.innerPage .loginPage .loginFrom .has-error p {
+  font-size: 3vh;
+}
+.innerPage .loginPage .loginFrom .has-error input {
+  border-color: #a94442;
+}
+.innerPage .loginPage .buttonContainer {
+  display: table;
+  margin: 0 auto;
+}
+.innerPage .loginPage .buttonContainer .submitLogin {
+  color: #38A7C2;
+  border: 1px solid #38A7C2;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed';
+  background: none;
+  font-size: 5vh;
+  border-radius: 3px;
+}
+.innerPage .loginPage .buttonContainer .cancelLogin {
+  border: none;
+  color: #919BAC;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed';
+  font-size: 5vh;
+  background: none;
+  margin-left: 12px;
+}
+/* /inner pages */
